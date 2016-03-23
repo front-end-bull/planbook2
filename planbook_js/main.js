@@ -72,7 +72,18 @@ require(["jquery"],function($){
                 });
             },
             onSlideChangeEnd: function(swiper){
+                // console.log(swiper)
                 swiperAnimate(swiper);
+                if(swiper.activeIndex==3){
+                    setTimeout(function(){
+                        $('.title-once').addClass('fadeOutRight')
+                        ;$('.text-once').addClass('fadeOutLeft')
+                    },1000)
+                }else{
+                    $('.title-once').removeClass('fadeOutRight')
+                    ;$('.text-once').removeClass('fadeOutLeft')
+                }
+                
             },
             onTransitionEnd: function(swiper){
                 swiperAnimate(swiper);
@@ -80,7 +91,6 @@ require(["jquery"],function($){
             }
             ,
             onProgress: function(swiper, progress){
-                console.log(progress)
                 for (var i = 0; i < swiper.slides.length; i++) {
                     var slide = swiper.slides[i];
                     var progress = slide.progress;
@@ -101,12 +111,9 @@ require(["jquery"],function($){
                  }
             },
             onSetTransition: function(swiper,speed){
-                // console.log("in onSetTransition")
                 for (var i = 0; i < swiper.slides.length; i++) {
-                    //if (i == swiper.myactive) {
                     es = swiper.slides[i].style;
                     es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
-                    //}
                  }
             }
         });

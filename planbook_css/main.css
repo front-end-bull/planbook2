@@ -353,28 +353,41 @@
 
 
 .swiper-slide4{
-    background: url("http://pc.tgbus.com/app/m/img/page4.jpg") no-repeat center top;
+    background: url("../img/page4.jpg") no-repeat center top;
     background-size: 100% 100%;
 }
-.swiper-slide4 h2{
-    font-size: 35px;color:#333333;font-weight: bold;letter-spacing: 2px;
-    position: absolute;top: 620px;
-    left: 120px;
-    line-height:60px;
-}
-.swiper-slide4 h2 strong{
-    font-size: 44px;color:#f2661f;font-weight: bold;
-}
-.swiper-slide4 p{
-    font-size: 21px;color:#474747;line-height: 30px;position: absolute;top:760px;
-    left: 120px;
-    line-height: 35px;
-}
-.swiper-slide4 .page4mobile{
+
+.swiper-slide4 .triangle{
     position: absolute;
-    top:85px;
-    left: 103px;
 }
+
+.swiper-slide4 .title-once{
+    position: absolute;
+    bottom: 568px;
+}
+
+.swiper-slide4 .text-once{
+    position: absolute;
+    bottom: 462px;
+}
+
+.swiper-slide4 .title{
+    position: absolute;
+    left:30px;
+    bottom:230px;
+
+}
+.swiper-slide4 .text{
+    position: absolute;
+    bottom: 128px;
+    left:86px;
+}
+
+.swiper-slide4 .bottom-bg{
+    position: absolute;
+    bottom: 0;
+}
+
 
 
 .swiper-slide5{

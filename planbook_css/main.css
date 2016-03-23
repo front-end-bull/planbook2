@@ -218,6 +218,15 @@
 
 
 
+.bottom-bg{
+    position: absolute;
+    bottom: 0;
+}
+
+.triangle{
+    position: absolute;
+}
+
 /*page1*/
 .swiper-slide1{
     background: transparent url("../img/page1.jpg") no-repeat center top;
@@ -357,9 +366,7 @@
     background-size: 100% 100%;
 }
 
-.swiper-slide4 .triangle{
-    position: absolute;
-}
+
 
 .swiper-slide4 .title-once{
     position: absolute;
@@ -383,72 +390,64 @@
     left:86px;
 }
 
-.swiper-slide4 .bottom-bg{
-    position: absolute;
-    bottom: 0;
-}
+
 
 
 
 .swiper-slide5{
-    background: url("http://pc.tgbus.com/app/m/img/page5.jpg") no-repeat center top;
+    background: url("../img/page5.jpg") no-repeat center top;
     background-size: 100% 100%;
 }
-.swiper-slide5 h2{
-    font-size: 35px;color:#333333;font-weight: bold;letter-spacing: 2px;
-    position: absolute;top: 125px;
-    left: 55px;
-    line-height:60px;
-}
-.swiper-slide5 h2 strong{
-    font-size: 44px;color:#f2661f;font-weight: bold;
-}
-.swiper-slide5 p{
-    font-size: 21px;color:#474747;line-height: 30px;position: absolute;top:205px;
-    left: 55px;
-    line-height: 35px;
-}
 
-.swiper-slide5 .page5mobile{
-    position: absolute;top:365px;
-    left: 55px;
+.swiper-slide5 .title{
+    position: absolute;
+    left:30px;
+    bottom:230px;
+
 }
-.swiper-slide5 .page5mobile_pic{
-     position: absolute;top:370px;
-     left: 55px;
- }
+.swiper-slide5 .text{
+    position: absolute;
+    bottom: 128px;
+    left:86px;
+}
 
 .swiper-slide6{
-    background: url("http://pc.tgbus.com/app/m/img/page4.jpg") no-repeat center top;
+    background: url("../img/page6.jpg") no-repeat center top;
     background-size: 100% 100%;
 }
-.swiper-slide6 .page6mobile{
-    position: absolute;top:35px;
-    left: 170px;
-}
 
-.swiper-slide6 h2{
-    font-size: 35px;color:#333333;font-weight: bold;letter-spacing: 2px;
-    position: absolute;top: 615px;
-    left: 160px;
-    line-height:60px;
-}
-.swiper-slide6 h2 strong{
-    font-size: 44px;color:#f2661f;font-weight: bold;
-}
-.swiper-slide6 p{
-    font-size: 21px;color:#474747;line-height: 30px;position: absolute;
-    line-height: 35px;top: 755px;
-    left: 160px;
-}
-
-.swiper-slide6 .page6mobileImg{
+.swiper-slide6 .title{
     position: absolute;
-    top: 106px;
-    left: 202px;
-    z-index: 2014;
-    width: 240px;
+    left:30px;
+    bottom:229px;
+
 }
+.swiper-slide6 .text{
+    position: absolute;
+    bottom: 128px;
+    left:76px;
+}
+
+.swiper-slide7{
+    background: url("../img/page7.jpg") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+.swiper-slide7 .title{
+    position: absolute;
+    left:30px;
+    bottom:230px;
+
+}
+.swiper-slide7 .text{
+    position: absolute;
+    bottom: 128px;
+    left:86px;
+}
+
+
+
+
 .bottom{
     position: fixed;
     bottom: 10px;

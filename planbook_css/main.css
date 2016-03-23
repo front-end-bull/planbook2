@@ -1,0 +1,455 @@
+
+.fountainTextG{
+    color:#000000;
+    font-family:Arial;
+    font-size:40px;
+    text-decoration:none;
+    font-weight:bold;
+    font-style:normal;
+    float:left;
+    -moz-animation-name:bounce_fountainTextG;
+    -moz-animation-duration:1.82s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:normal;
+    -moz-transform:scale(.5);
+    -webkit-animation-name:bounce_fountainTextG;
+    -webkit-animation-duration:1.82s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-transform:scale(.5);
+    -ms-animation-name:bounce_fountainTextG;
+    -ms-animation-duration:1.82s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:normal;
+    -ms-transform:scale(.5);
+    -o-animation-name:bounce_fountainTextG;
+    -o-animation-duration:1.82s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:normal;
+    -o-transform:scale(.5);
+    animation-name:bounce_fountainTextG;
+    animation-duration:1.82s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    transform:scale(.5);
+}
+
+#fountainTextG_1{
+    -moz-animation-delay:0.52s;
+    -webkit-animation-delay:0.52s;
+    -ms-animation-delay:0.52s;
+    -o-animation-delay:0.52s;
+    animation-delay:0.52s;
+}
+
+#fountainTextG_2{
+    -moz-animation-delay:0.65s;
+    -webkit-animation-delay:0.65s;
+    -ms-animation-delay:0.65s;
+    -o-animation-delay:0.65s;
+    animation-delay:0.65s;
+}
+
+#fountainTextG_3{
+    -moz-animation-delay:0.78s;
+    -webkit-animation-delay:0.78s;
+    -ms-animation-delay:0.78s;
+    -o-animation-delay:0.78s;
+    animation-delay:0.78s;
+}
+
+#fountainTextG_4{
+    -moz-animation-delay:0.91s;
+    -webkit-animation-delay:0.91s;
+    -ms-animation-delay:0.91s;
+    -o-animation-delay:0.91s;
+    animation-delay:0.91s;
+}
+
+#fountainTextG_5{
+    -moz-animation-delay:1.04s;
+    -webkit-animation-delay:1.04s;
+    -ms-animation-delay:1.04s;
+    -o-animation-delay:1.04s;
+    animation-delay:1.04s;
+}
+
+#fountainTextG_6{
+    -moz-animation-delay:1.17s;
+    -webkit-animation-delay:1.17s;
+    -ms-animation-delay:1.17s;
+    -o-animation-delay:1.17s;
+    animation-delay:1.17s;
+}
+
+#fountainTextG_7{
+    -moz-animation-delay:1.3s;
+    -webkit-animation-delay:1.3s;
+    -ms-animation-delay:1.3s;
+    -o-animation-delay:1.3s;
+    animation-delay:1.3s;
+}
+
+#fountainTextG_8{
+    -moz-animation-delay:1.43s;
+    -webkit-animation-delay:1.43s;
+    -ms-animation-delay:1.43s;
+    -o-animation-delay:1.43s;
+    animation-delay:1.43s;
+}
+
+#fountainTextG_9{
+    -moz-animation-delay:1.56s;
+    -webkit-animation-delay:1.56s;
+    -ms-animation-delay:1.56s;
+    -o-animation-delay:1.56s;
+    animation-delay:1.56s;
+}
+
+#fountainTextG_10{
+    -moz-animation-delay:1.69s;
+    -webkit-animation-delay:1.69s;
+    -ms-animation-delay:1.69s;
+    -o-animation-delay:1.69s;
+    animation-delay:1.69s;
+}
+
+@-moz-keyframes bounce_fountainTextG{
+    0%{
+        -moz-transform:scale(1);
+        color:#000000;
+    }
+
+    100%{
+        -moz-transform:scale(.5);
+        color:#FFFFFF;
+    }
+
+}
+
+@-webkit-keyframes bounce_fountainTextG{
+    0%{
+        -webkit-transform:scale(1);
+        color:#000000;
+    }
+
+    100%{
+        -webkit-transform:scale(.5);
+        color:#FFFFFF;
+    }
+
+}
+
+@-ms-keyframes bounce_fountainTextG{
+    0%{
+        -ms-transform:scale(1);
+        color:#000000;
+    }
+
+    100%{
+        -ms-transform:scale(.5);
+        color:#FFFFFF;
+    }
+
+}
+
+
+
+@keyframes bounce_fountainTextG {
+    0% {
+        transform: scale(1);
+        color: #000000;
+    }
+
+    100% {
+        transform: scale(.5);
+        color: #FFFFFF;
+    }
+}
+
+
+
+.swiper-container{
+    width:750px;
+    height:1140px;
+    overflow: hidden;
+}
+
+
+#loading{
+    background: transparent url("http://pc.tgbus.com/app/m/img/page1.jpg") no-repeat center top;
+    background-size: 100% 100%;
+    width:750px;
+    height:1140px;
+}
+#loading .icon{
+    position: absolute;
+    top:80px;left:260px;
+}
+#loading .puple{
+    position: absolute;
+    top:20px;left:430px;
+}
+#loading h1{
+    font-size: 70px;color:#fff;letter-spacing: 15px;top:240px;left:165px;position: absolute;
+}
+#loading h2{
+    font-size: 32px;color:#fff;letter-spacing: 10px;top:360px;left:160px;position: absolute;
+}
+#loading .line{
+    position: absolute;top: 345px;
+    left: 160px;
+    height:2px;
+    background: #fff;width:325px;
+}
+#loading .download{
+    width:325px;height:65px;display:block;
+    font-size: 35px;color:#fff;border-radius: 40px;
+    background: #00a2ff;text-align: center;
+    line-height: 65px;position: absolute;top:530px;left:160px;
+}
+#fountainTextG{
+    padding:0px 225px;
+    width:190px;
+    top:460px;
+    margin-top: -20px;
+    position: absolute;
+}
+
+
+
+/*page1*/
+.swiper-slide1{
+    background: transparent url("../img/page1.jpg") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+.swiper-slide1 .top{
+    position: absolute;
+    width: 465px;
+    height: 345px;
+    left: 142px;
+}
+
+.swiper-slide1 .bottom-bg{
+    position: absolute;
+    bottom: 0;
+    height: 178px;
+}
+
+.swiper-slide1 .bottom-title{
+    position: absolute;
+    bottom: 120px;
+    left:172px;
+    width: 406px;
+}
+
+
+
+
+
+/*page2*/
+.swiper-slide2{
+    background: url("../img/page2.jpg") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+.swiper-slide2 .top-bg{
+    position: absolute;
+    width: 750px;
+    top: 78px;
+}
+
+
+.swiper-slide2 .top-title{
+    position: absolute;
+    width: 195px;
+    left: 50%;
+    margin-left: -98px;
+    top: 56px;
+}
+
+.swiper-slide2 .icon1{
+    width: 90px;
+    position: absolute;
+    left: 36px;
+    top: 188px; 
+}
+
+.swiper-slide2 .icon2{
+    width: 90px;
+    position: absolute;
+    left: 36px;
+    top: 326px;
+}
+
+.swiper-slide2 .icon3{
+    width: 90px;
+    position: absolute;
+    left: 36px;
+    top: 464px;
+}
+
+.swiper-slide2 .icon4{
+    width: 90px;
+    position: absolute;
+    left: 36px;
+    top:  602px;
+}
+
+
+.swiper-slide2 .describe1{
+    width: 269px;
+    position: absolute;
+    left: 170px;
+    top: 223px; 
+}
+
+.swiper-slide2 .describe2{
+    width: 437px;
+    position: absolute;
+    left: 170px;
+    top: 362px;
+}
+
+.swiper-slide2 .describe3{
+    width: 476px;
+    position: absolute;
+    left: 170px;
+    top: 501px;
+}
+
+.swiper-slide2 .describe4{
+    width: 547px;
+    position: absolute;
+    left: 170px;
+    top:  632px;
+}
+
+
+.swiper-slide2 .text-outline{
+    width: 679px;
+    position: absolute;
+    left: 36px;
+    bottom:  128px;
+}
+
+.swiper-slide2 .text{
+    width: 637px;
+    position: absolute;
+    left: 58px;
+    bottom:  154px;
+}
+
+
+
+
+
+
+.swiper-slide3{
+    background: url("../img/page3.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+
+.swiper-slide4{
+    background: url("http://pc.tgbus.com/app/m/img/page4.jpg") no-repeat center top;
+    background-size: 100% 100%;
+}
+.swiper-slide4 h2{
+    font-size: 35px;color:#333333;font-weight: bold;letter-spacing: 2px;
+    position: absolute;top: 620px;
+    left: 120px;
+    line-height:60px;
+}
+.swiper-slide4 h2 strong{
+    font-size: 44px;color:#f2661f;font-weight: bold;
+}
+.swiper-slide4 p{
+    font-size: 21px;color:#474747;line-height: 30px;position: absolute;top:760px;
+    left: 120px;
+    line-height: 35px;
+}
+.swiper-slide4 .page4mobile{
+    position: absolute;
+    top:85px;
+    left: 103px;
+}
+
+
+.swiper-slide5{
+    background: url("http://pc.tgbus.com/app/m/img/page5.jpg") no-repeat center top;
+    background-size: 100% 100%;
+}
+.swiper-slide5 h2{
+    font-size: 35px;color:#333333;font-weight: bold;letter-spacing: 2px;
+    position: absolute;top: 125px;
+    left: 55px;
+    line-height:60px;
+}
+.swiper-slide5 h2 strong{
+    font-size: 44px;color:#f2661f;font-weight: bold;
+}
+.swiper-slide5 p{
+    font-size: 21px;color:#474747;line-height: 30px;position: absolute;top:205px;
+    left: 55px;
+    line-height: 35px;
+}
+
+.swiper-slide5 .page5mobile{
+    position: absolute;top:365px;
+    left: 55px;
+}
+.swiper-slide5 .page5mobile_pic{
+     position: absolute;top:370px;
+     left: 55px;
+ }
+
+.swiper-slide6{
+    background: url("http://pc.tgbus.com/app/m/img/page4.jpg") no-repeat center top;
+    background-size: 100% 100%;
+}
+.swiper-slide6 .page6mobile{
+    position: absolute;top:35px;
+    left: 170px;
+}
+
+.swiper-slide6 h2{
+    font-size: 35px;color:#333333;font-weight: bold;letter-spacing: 2px;
+    position: absolute;top: 615px;
+    left: 160px;
+    line-height:60px;
+}
+.swiper-slide6 h2 strong{
+    font-size: 44px;color:#f2661f;font-weight: bold;
+}
+.swiper-slide6 p{
+    font-size: 21px;color:#474747;line-height: 30px;position: absolute;
+    line-height: 35px;top: 755px;
+    left: 160px;
+}
+
+.swiper-slide6 .page6mobileImg{
+    position: absolute;
+    top: 106px;
+    left: 202px;
+    z-index: 2014;
+    width: 240px;
+}
+.bottom{
+    position: fixed;
+    bottom: 10px;
+    width: 72px;
+    margin-left: -36px;
+    left:50%;
+    z-index: 2015;
+    -webkit-animation: nextpage 1.2s 1s infinite;  
+}
+
+@-webkit-keyframes nextpage /* Safari 和 Chrome */
+{
+    0% {bottom: 10px;}
+    70% {bottom: 25px;}
+    100% {bottom: 10px;}
+}   
+

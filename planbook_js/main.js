@@ -83,13 +83,13 @@ require(["jquery"],function($){
                     $('.title-once').removeClass('fadeOutRight')
                     ;$('.text-once').removeClass('fadeOutLeft')
                 }
-                if(swiper.activeIndex==7){
-                    setTimeout(function() {
-                       $('.phone').addClass('hinge')
-                    },2000)
-                }else{
-                    $('.phone').removeClass('hinge')
-                }
+                // if(swiper.activeIndex==7){
+                //     setTimeout(function() {
+                //        $('.phone').addClass('hinge')
+                //     },2000)
+                // }else{
+                //     $('.phone').removeClass('hinge')
+                // }
 
                 
             },

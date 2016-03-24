@@ -180,7 +180,7 @@
     background: transparent url("../img/loading.jpg") no-repeat center top;
     background-size: 100% 100%;
     width:750px;
-    height:1140px;
+    height:1206px;
 }
 #loading .icon{
     position: absolute;
@@ -357,7 +357,7 @@
 
 
 .swiper-slide3{
-    background: url("../img/page3.jpg") no-repeat center top;
+    background: url("../img/page3.png") no-repeat center top;
     background-size: 100% 100%;
 }
 

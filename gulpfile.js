@@ -47,12 +47,12 @@ gulp.task('script',function(){
 		.pipe(gulp.dest('planbook_js'))
 })
 
-gulp.task('image',function(){
-	return gulp.src('image/*.{jpg,jpeg,png,gif}')
-		// .pipe(cached('image'))
-		.pipe(imagemin({optimizationLevel:3,progressive:true,interlaced:true,multipass:true}))
-		.pipe(gulp.dest('img'))
-})
+// gulp.task('image',function(){
+// 	return gulp.src('image/*.{jpg,jpeg,png,gif}')
+// 		// .pipe(cached('image'))
+// 		.pipe(imagemin({optimizationLevel:3,progressive:true,interlaced:true,multipass:true}))
+// 		.pipe(gulp.dest('img'))
+// })
 
 
 gulp.task('clean',function(){
@@ -60,7 +60,7 @@ gulp.task('clean',function(){
 })
 
 
-gulp.task('build',['css','script','image'],function(){
+gulp.task('build',['css','script'],function(){
 
 })
 

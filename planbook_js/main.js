@@ -41,8 +41,17 @@ require(["jquery"],function($){
         });
     });
 
+    $(function(){
+        $('.lazy-css').each(
+            function(){
+                // console.log($(this).attr("lazy-src"));
+                $(this).attr("src",$(this).attr("lazy-src")).removeAttr("lazy-src")
+        })
+    });
+
     require(["css!../planbook_css/animate.min.css","css!../planbook_css/swiper-3.3.1.min.css","swiperAnimate","swiper"],function(){
         var mySwiper = new Swiper('.swiper-container',{
+            // preloadImages:false,
             setWrapperSize :true,
             direction:"vertical",
             speed : 1000,

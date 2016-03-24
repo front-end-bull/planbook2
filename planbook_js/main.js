@@ -57,8 +57,8 @@ require(["jquery"],function($){
             onInit: function(swiper){
                  swiper.myactive = 0;
                 setTimeout(function(){
-                    $("#loading").remove();
-                    $(".swiper-container").css({"opacity":"1"});
+                    // $("#loading").remove();
+                    // $(".swiper-container").css({"opacity":"1"});
                     swiperAnimateCache(swiper);
                     swiperAnimate(swiper);
                 },1000);
@@ -74,7 +74,7 @@ require(["jquery"],function($){
             onSlideChangeEnd: function(swiper){
                 // console.log(swiper)
                 swiperAnimate(swiper);
-                if(swiper.activeIndex==3){
+                if(swiper.activeIndex==1){
                     setTimeout(function(){
                         $('.title-once').addClass('fadeOutRight')
                         ;$('.text-once').addClass('fadeOutLeft')

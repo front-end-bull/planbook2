@@ -177,8 +177,8 @@
 
 
 #loading{
-    background: transparent url("http://pc.tgbus.com/app/m/img/page1.jpg") no-repeat center top;
-    background-size: 100% 100%;
+    /*background: transparent url("http://pc.tgbus.com/app/m/img/page1.jpg") no-repeat center top;*/
+    /*background-size: 100% 100%;*/
     width:750px;
     height:1140px;
 }
@@ -212,8 +212,9 @@
     padding:0px 225px;
     width:190px;
     top:460px;
-    margin-top: -20px;
     position: absolute;
+    left: 50%;
+    margin-left: -320px;
 }
 
 
@@ -440,6 +441,23 @@
 
 }
 .swiper-slide7 .text{
+    position: absolute;
+    bottom: 128px;
+    left:76px;
+}
+
+.swiper-slide8{
+    background: url("../img/page8.jpg") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+.swiper-slide8 .title{
+    position: absolute;
+    left:30px;
+    bottom:230px;
+
+}
+.swiper-slide8 .text{
     position: absolute;
     bottom: 128px;
     left:86px;

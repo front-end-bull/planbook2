@@ -228,6 +228,7 @@
     position: absolute;
 }
 
+
 /*page1*/
 .swiper-slide1{
     background: transparent url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page1.jpg") no-repeat center top;
@@ -260,7 +261,7 @@
 
 /*page2*/
 .swiper-slide2{
-    background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page2.jpg") no-repeat center top;
+     /*background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page2.jpg") no-repeat center top;*/
     background-size: 100% 100%;
 }
 
@@ -357,7 +358,7 @@
 
 
 .swiper-slide3{
-    background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page3.png") no-repeat center top;
+    /*background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page3.png") no-repeat center top;*/
     background-size: 100% 100%;
 }
 
@@ -383,7 +384,7 @@
 
 
 .swiper-slide4{
-    background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page4.jpg") no-repeat center top;
+    /*background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page4.jpg") no-repeat center top;*/
     background-size: 100% 100%;
 }
 
@@ -416,7 +417,7 @@
 
 
 .swiper-slide5{
-    background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page5.jpg") no-repeat center top;
+    /*background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page5.jpg") no-repeat center top;*/
     background-size: 100% 100%;
 }
 
@@ -433,7 +434,7 @@
 }
 
 .swiper-slide6{
-    background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page6.jpg") no-repeat center top;
+    /*background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page6.jpg") no-repeat center top;*/
     background-size: 100% 100%;
 }
 
@@ -450,7 +451,7 @@
 }
 
 .swiper-slide7{
-    background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page7.jpg") no-repeat center top;
+    /*background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page7.jpg") no-repeat center top;*/
     background-size: 100% 100%;
 }
 
@@ -467,7 +468,7 @@
 }
 
 .swiper-slide8{
-    background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page8.jpg") no-repeat center top;
+    /*background: url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page8.jpg") no-repeat center top;*/
     background-size: 100% 100%;
 }
 

@@ -31,6 +31,10 @@ require.config({
 
 require(["jquery"],function($){
 
+
+    var Img_load_over = false;
+
+
     $('.swiper-slide,.swiper-container,#loading').css({
         height: $(window).height()
     });
@@ -42,7 +46,16 @@ require(["jquery"],function($){
     });
 
     $(function(){
-        
+        var totalImg = $('img').length;
+        var currentImg = 0;
+        $('img').on('load',function(){
+            currentImg++;
+            // console.log(currentImg)
+            if(currentImg === totalImg){
+            Img_load_over = true
+        }
+        })
+
         var pageSize = 8;
 
         for(var i = 2;i<pageSize+1;i++){
@@ -73,20 +86,23 @@ require(["jquery"],function($){
             watchSlidesProgress : true,
             onInit: function(swiper){
                  swiper.myactive = 0;
-                setTimeout(function(){
-                    $("#loading").remove();
-                    $(".swiper-container").css({"opacity":"1"});
-                    swiperAnimateCache(swiper);
-                    swiperAnimate(swiper);
-                },1000);
-
-                $(".swiper-slide").click(function(){
-                    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                        window.location.href="https://itunes.apple.com/cn/app/gong-e-mi-ce/id1039227334?l=zh&ls=1&mt=8";
-                    }else{
-                        window.location.href="http://downfile2.tgbusdata.cn/app/pcgame/android/pcgame.apk";
+                var flag = setInterval(function(){
+                    if(Img_load_over){
+                        $("#loading").remove();
+                        $(".swiper-container").css({"opacity":"1"});
+                        swiperAnimateCache(swiper);
+                        swiperAnimate(swiper);
+                        clearInterval(flag);
                     }
-                });
+                },50);
+
+                // $(".swiper-slide").click(function(){
+                //     if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                //         window.location.href="https://itunes.apple.com/cn/app/gong-e-mi-ce/id1039227334?l=zh&ls=1&mt=8";
+                //     }else{
+                //         window.location.href="http://downfile2.tgbusdata.cn/app/pcgame/android/pcgame.apk";
+                //     }
+                // });
             },
             onSlideChangeEnd: function(swiper){
                 // console.log(swiper)

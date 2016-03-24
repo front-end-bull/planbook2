@@ -57,8 +57,8 @@ require(["jquery"],function($){
             onInit: function(swiper){
                  swiper.myactive = 0;
                 setTimeout(function(){
-                    // $("#loading").remove();
-                    // $(".swiper-container").css({"opacity":"1"});
+                    $("#loading").remove();
+                    $(".swiper-container").css({"opacity":"1"});
                     swiperAnimateCache(swiper);
                     swiperAnimate(swiper);
                 },1000);
@@ -83,6 +83,14 @@ require(["jquery"],function($){
                     $('.title-once').removeClass('fadeOutRight')
                     ;$('.text-once').removeClass('fadeOutLeft')
                 }
+                if(swiper.activeIndex==7){
+                    setTimeout(function() {
+                       $('.phone').addClass('hinge')
+                    },2000)
+                }else{
+                    $('.phone').removeClass('hinge')
+                }
+
                 
             },
             onTransitionEnd: function(swiper){

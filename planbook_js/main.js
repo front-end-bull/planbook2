@@ -34,7 +34,6 @@ require(["jquery"],function($){
 
     var Img_load_over = false;
 
-
     $('.swiper-slide,.swiper-container,#loading').css({
         height: $(window).height()
     });
@@ -87,12 +86,39 @@ require(["jquery"],function($){
             onInit: function(swiper){
                  swiper.myactive = 0;
                 var flag = setInterval(function(){
+                    // console.log(Img_load_over)
                     if(Img_load_over){
-                        $("#loading").remove();
-                        $(".swiper-container").css({"opacity":"1"});
-                        swiperAnimateCache(swiper);
-                        swiperAnimate(swiper);
-                        clearInterval(flag);
+                        // $("#loading").remove();
+                        // console.log(DegSpeedSlow)
+                        // console.log(loop)
+                        if(loop==false){
+                            // console.log(DegSpeedSlow)
+                            clearInterval(LoadingFlag);
+                            clearInterval(flag);
+                            $("#myCanvas").remove();
+                            $("#loading-small").css({"opacity":"1"});
+                            $("#loading-big").css({"opacity":"1"});
+
+                            var Size = 1;
+                            var scaleFlag = setInterval(function(){
+                                Size += 0.8;
+                                $("#loading-big").css({transform:"scale("+Size+")"});
+                                if(Size<23.6){
+                                    console.log(Size)
+                                    var diameter = 60*Size+"px";
+                                    var radius = 30*Size+"px";
+                                    $("#loading-small").css({width: diameter,height: diameter,"border-radius": radius,"margin-left": "-"+radius,"margin-top": "-"+radius});
+                                }else{
+                                    clearInterval(scaleFlag);
+                                    $("#loading").remove();
+                                    $(".swiper-container").css({"opacity":"1"});
+                                    swiperAnimateCache(swiper);
+                                    swiperAnimate(swiper); 
+                                }
+                            },30);
+                           
+                        }
+                        
                     }
                 },50);
 

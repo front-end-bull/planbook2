@@ -1,223 +1,49 @@
 
-.fountainTextG{
-    color:#000000;
-    font-family:Arial;
-    font-size:40px;
-    text-decoration:none;
-    font-weight:bold;
-    font-style:normal;
-    float:left;
-    -moz-animation-name:bounce_fountainTextG;
-    -moz-animation-duration:1.82s;
-    -moz-animation-iteration-count:infinite;
-    -moz-animation-direction:normal;
-    -moz-transform:scale(.5);
-    -webkit-animation-name:bounce_fountainTextG;
-    -webkit-animation-duration:1.82s;
-    -webkit-animation-iteration-count:infinite;
-    -webkit-animation-direction:normal;
-    -webkit-transform:scale(.5);
-    -ms-animation-name:bounce_fountainTextG;
-    -ms-animation-duration:1.82s;
-    -ms-animation-iteration-count:infinite;
-    -ms-animation-direction:normal;
-    -ms-transform:scale(.5);
-    -o-animation-name:bounce_fountainTextG;
-    -o-animation-duration:1.82s;
-    -o-animation-iteration-count:infinite;
-    -o-animation-direction:normal;
-    -o-transform:scale(.5);
-    animation-name:bounce_fountainTextG;
-    animation-duration:1.82s;
-    animation-iteration-count:infinite;
-    animation-direction:normal;
-    transform:scale(.5);
-}
-
-#fountainTextG_1{
-    -moz-animation-delay:0.52s;
-    -webkit-animation-delay:0.52s;
-    -ms-animation-delay:0.52s;
-    -o-animation-delay:0.52s;
-    animation-delay:0.52s;
-}
-
-#fountainTextG_2{
-    -moz-animation-delay:0.65s;
-    -webkit-animation-delay:0.65s;
-    -ms-animation-delay:0.65s;
-    -o-animation-delay:0.65s;
-    animation-delay:0.65s;
-}
-
-#fountainTextG_3{
-    -moz-animation-delay:0.78s;
-    -webkit-animation-delay:0.78s;
-    -ms-animation-delay:0.78s;
-    -o-animation-delay:0.78s;
-    animation-delay:0.78s;
-}
-
-#fountainTextG_4{
-    -moz-animation-delay:0.91s;
-    -webkit-animation-delay:0.91s;
-    -ms-animation-delay:0.91s;
-    -o-animation-delay:0.91s;
-    animation-delay:0.91s;
-}
-
-#fountainTextG_5{
-    -moz-animation-delay:1.04s;
-    -webkit-animation-delay:1.04s;
-    -ms-animation-delay:1.04s;
-    -o-animation-delay:1.04s;
-    animation-delay:1.04s;
-}
-
-#fountainTextG_6{
-    -moz-animation-delay:1.17s;
-    -webkit-animation-delay:1.17s;
-    -ms-animation-delay:1.17s;
-    -o-animation-delay:1.17s;
-    animation-delay:1.17s;
-}
-
-#fountainTextG_7{
-    -moz-animation-delay:1.3s;
-    -webkit-animation-delay:1.3s;
-    -ms-animation-delay:1.3s;
-    -o-animation-delay:1.3s;
-    animation-delay:1.3s;
-}
-
-#fountainTextG_8{
-    -moz-animation-delay:1.43s;
-    -webkit-animation-delay:1.43s;
-    -ms-animation-delay:1.43s;
-    -o-animation-delay:1.43s;
-    animation-delay:1.43s;
-}
-
-#fountainTextG_9{
-    -moz-animation-delay:1.56s;
-    -webkit-animation-delay:1.56s;
-    -ms-animation-delay:1.56s;
-    -o-animation-delay:1.56s;
-    animation-delay:1.56s;
-}
-
-#fountainTextG_10{
-    -moz-animation-delay:1.69s;
-    -webkit-animation-delay:1.69s;
-    -ms-animation-delay:1.69s;
-    -o-animation-delay:1.69s;
-    animation-delay:1.69s;
-}
-
-@-moz-keyframes bounce_fountainTextG{
-    0%{
-        -moz-transform:scale(1);
-        color:#000000;
-    }
-
-    100%{
-        -moz-transform:scale(.5);
-        color:#FFFFFF;
-    }
-
-}
-
-@-webkit-keyframes bounce_fountainTextG{
-    0%{
-        -webkit-transform:scale(1);
-        color:#000000;
-    }
-
-    100%{
-        -webkit-transform:scale(.5);
-        color:#FFFFFF;
-    }
-
-}
-
-@-ms-keyframes bounce_fountainTextG{
-    0%{
-        -ms-transform:scale(1);
-        color:#000000;
-    }
-
-    100%{
-        -ms-transform:scale(.5);
-        color:#FFFFFF;
-    }
-
-}
-
-
-
-@keyframes bounce_fountainTextG {
-    0% {
-        transform: scale(1);
-        color: #000000;
-    }
-
-    100% {
-        transform: scale(.5);
-        color: #FFFFFF;
-    }
-}
-
-
-
 .swiper-container{
     width:750px;
-    height:1140px;
+    height:1218px;
     overflow: hidden;
 }
 
-
 #loading{
-    background: transparent url("http://7xs8ay.com2.z0.glb.qiniucdn.com/loading.jpg") no-repeat center top;
-    background-size: 100% 100%;
     width:750px;
-    height:1206px;
+    height:1218px;
+    overflow: hidden;
+    position: relative;
+    background: #f98935;
 }
-#loading .icon{
-    position: absolute;
-    top:80px;left:260px;
-}
-#loading .puple{
-    position: absolute;
-    top:20px;left:430px;
-}
-#loading h1{
-    font-size: 70px;color:#fff;letter-spacing: 15px;top:240px;left:165px;position: absolute;
-}
-#loading h2{
-    font-size: 32px;color:#fff;letter-spacing: 10px;top:360px;left:160px;position: absolute;
-}
-#loading .line{
-    position: absolute;top: 345px;
-    left: 160px;
-    height:2px;
-    background: #fff;width:325px;
-}
-#loading .download{
-    width:325px;height:65px;display:block;
-    font-size: 35px;color:#fff;border-radius: 40px;
-    background: #00a2ff;text-align: center;
-    line-height: 65px;position: absolute;top:530px;left:160px;
-}
-#fountainTextG{
-    padding:0px 225px;
-    width:190px;
-    top:460px;
+
+#myCanvas{
     position: absolute;
     left: 50%;
-    margin-left: -320px;
+    top: 50%;
+    margin-left: -131px;
+    margin-top: -131px;
 }
 
+#loading-small{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    top: 50%;
+    border-radius: 30px;
+    margin-left: -30px;
+    margin-top: -30px;
+    background: transparent url("http://7xs8ay.com2.z0.glb.qiniucdn.com/page1.jpg") no-repeat center center;
+    background-size: 750px 1216px;
+}
 
+#loading-big{
+    position: absolute;
+    height: 260px;
+    width: 260px;left: 50%;
+    top: 50%;
+    border-radius: 130px;
+    margin-left: -130px;
+    margin-top: -130px;
+    background: white;
+}
 
 .bottom-bg{
     position: absolute;

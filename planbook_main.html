@@ -22,44 +22,64 @@
         } else {
             document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
         }
-
-        // var image_path = 'http://7xs8ay.com2.z0.glb.qiniucdn.com/'; 
-        // var images = ['loading.jpg', 'page1.jpg','page1_top.png','page1_bottom_bg.png','page1_bottom_title.png']; 
-        // for(var i = 0; i < images.length; i++){ 
-        //   var image_preload = new Image(); 
-        //   image_preload.src = image_path + images[i];
-        // }
     </script>
     <link rel="stylesheet" href="planbook_css/global.min.css"/>
     <link rel="stylesheet" href="planbook_css/main.min.css"/>
-    <script src="http://pc.tgbus.com/app/m/scripts/require.js" data-main="planbook_js/main.min.js" defer async="true"></script>
+    <script src="planbook_js/require.js" data-main="planbook_js/main.min.js" defer async="true"></script>
 </head>
 <body>
 
     <aside id="loading">
-        <div id="fountainTextG">
-            <div id="fountainTextG_1" class="fountainTextG">
-                L</div>
-            <div id="fountainTextG_2" class="fountainTextG">
-                o</div>
-            <div id="fountainTextG_3" class="fountainTextG">
-                a</div>
-            <div id="fountainTextG_4" class="fountainTextG">
-                d</div>
-            <div id="fountainTextG_5" class="fountainTextG">
-                i</div>
-            <div id="fountainTextG_6" class="fountainTextG">
-                n</div>
-            <div id="fountainTextG_7" class="fountainTextG">
-                g</div>
-            <div id="fountainTextG_8" class="fountainTextG">
-                .</div>
-            <div id="fountainTextG_9" class="fountainTextG">
-                .</div>
-            <div id="fountainTextG_10" class="fountainTextG">
-                .</div>
-        </div>
+     <canvas id="myCanvas" width="262" height="262"></canvas>
+    
+    <div id="loading-big" style="opacity: 0"></div>
+    <div id="loading-small" style="opacity: 0"></div>
     </aside>
+    <script>
+        function PI(deg){
+            return deg/180*Math.PI;
+        }
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        var pi=Math.PI;
+        var DegSpeedFast = 0;
+        var DegSpeedSlow = 0;
+        var loop = true;
+        var LoadingFlag = setInterval(function(){
+                // console.log("in")
+                DegSpeedSlow+=2;
+                DegSpeedFast+=4;    
+                if((DegSpeedSlow+2)%360==0){
+                    loop = !loop;
+                    DegSpeedFast = 4;
+                    DegSpeedSlow = 2;
+                }
+                if(loop){
+                    context.clearRect(0,0,262,262);
+                    context.beginPath();
+                    context.arc(130-80*Math.sin(PI(180+DegSpeedFast)),131+80*Math.cos(PI(180+DegSpeedFast)), 50, PI(90+180+DegSpeedFast), PI(-90+180+DegSpeedFast), false);
+                    context.arc(130, 131, 30, PI(-90+DegSpeedFast), PI(-90+DegSpeedSlow), true);
+                    context.arc(130+80*Math.sin(PI(360+DegSpeedSlow)), 131-80*Math.cos(PI(360+DegSpeedSlow)), 50, PI(90+360+DegSpeedSlow), PI(-90+360+DegSpeedSlow), false);
+                    context.arc(130, 131, 130, PI(-90+DegSpeedSlow), PI(-90+DegSpeedFast), false);
+                    context.fillStyle ='white';
+                    context.strokeStyle = 'white';
+                    context.fill();
+                    context.stroke();
+                }else{
+                    context.clearRect(0,0,262,262);
+                    context.beginPath();
+                    context.arc(130-80*Math.sin(PI(180+DegSpeedSlow)),131+80*Math.cos(PI(180+DegSpeedSlow)), 50, PI(90+180+DegSpeedSlow), PI(-90+180+DegSpeedSlow), false);
+                    context.arc(130, 131, 30, PI(-90+DegSpeedSlow), PI(-90+DegSpeedFast), true);
+                    context.arc(130+80*Math.sin(PI(360+DegSpeedFast)), 131-80*Math.cos(PI(360+DegSpeedFast)), 50, PI(90+360+DegSpeedFast), PI(-90+360+DegSpeedFast), false);
+                    context.arc(130, 131, 130, PI(-90+DegSpeedFast), PI(-90+DegSpeedSlow), false);
+                    context.fillStyle ='white';
+                    context.strokeStyle = 'white';
+                    context.fill();
+                    context.stroke();
+                }
+        },30)
+       
+    </script>
 
     <section class="swiper-container" style="opacity: 0">
         <div class="swiper-wrapper">

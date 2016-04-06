@@ -104,7 +104,6 @@ require(["jquery"],function($){
                                 Size += 0.8;
                                 $("#loading-big").css({transform:"scale("+Size+")"});
                                 if(Size<23.6){
-                                    console.log(Size)
                                     var diameter = 60*Size+"px";
                                     var radius = 30*Size+"px";
                                     $("#loading-small").css({width: diameter,height: diameter,"border-radius": radius,"margin-left": "-"+radius,"margin-top": "-"+radius});
